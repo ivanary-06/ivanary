@@ -34,7 +34,7 @@
         </ul>
     </nav>
 
-    <div class="main-wrapper">
+    <main class="main-wrapper">
         <!-- Section 1: Tentang Saya -->
         <section id="tentang" class="section-card">
             <h2 class="section-title">Tentang Saya</h2>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <strong>SMK Negeri 1 Gianyar</strong>
-                    <span>2022 – 2026 | Teknik Komputer Jaringan</span>
+                    <span>2022 – 2025 | Teknik Komputer Jaringan</span>
                 </li>
                 <li>
                     <strong>INSTIKI (Institut Bisnis dan Teknologi Indonesia)</strong>
@@ -80,12 +80,16 @@
                         <tr>
                             <td>SMK</td>
                             <td>SMK Negeri 1 Gianyar</td>
-                            <td>2022–2026</td>
+                            <td>2022–2025</td>
                         </tr>
                         <tr>
                             <td>S1</td>
                             <td>INSTIKI</td>
                             <td>2025–Sekarang</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Status Akademik</strong></td>
+                            <td>Mahasiswa Aktif</td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,7 +137,7 @@
             <h2 class="section-title">Sertifikat yang Dimiliki</h2>
             <div class="certif-grid">
                 <div class="certif-card">
-                    <a href="SERTIFIKAT RUIJIE 1.png"_blank" title="Klik untuk memperbesar">
+                    <a href="SERTIFIKAT RUIJIE 1.png" target="_blank" title="Klik untuk memperbesar">
                         <img src="SERTIFIKAT RUIJIE 1.png" alt="Sertifikat 1 - Made Ivan Ary Mahardika" class="certif-img">
                     </a>
                     <h4>Sertifikat Kompetensi 1</h4>
@@ -147,9 +151,9 @@
             </div>
         </section>
 
-        <!-- Section 5: Kontak -->
+        <!-- Section 5: Kontak & Form Pesan -->
         <section id="kontak" class="section-card">
-            <h2 class="section-title">Kontak</h2>
+            <h2 class="section-title">Kontak & Pesan</h2>
             
             <div class="contact-links-grid">
                 <a href="mailto:ivanary48@gmail.com" class="contact-box">
@@ -168,8 +172,39 @@
                     <strong>@ivan.mhrdk_</strong>
                 </a>
             </div>
+
+            <!-- Form Kontak Interaktif -->
+            <h3 class="sub-title">Kirim Pesan</h3>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topik">Topik Pesan:</label>
+                    <select id="topik" name="topik" required>
+                        <option value="" disabled selected>-- Pilih Topik --</option>
+                        <option value="konsultasi">Konsultasi IT & Networking</option>
+                        <option value="proyek">Penawaran Proyek / Maintenance</option>
+                        <option value="lainnya">Pertanyaan Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan Anda:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Kirim Pesan</button>
+            </form>
         </section>
-    </div>
+    </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Made Ivan Ary Mahardika.</p>
